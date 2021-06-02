@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,8 @@ import { DashboardPageComponent } from './dashboard/dashboard-page/dashboard-pag
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardModule
+    DashboardModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
